@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestUdemy">
+   <test name="classes">
+      <classes>
+         <class name="stardolphin.com.udemy.AppiumTest" />
+         <class name="stardolphin.com.udemy.AppTest" />
+         <class name="stardolphin.com.udemy.RestApiTest" />
+         <class name="stardolphin.com.udemy.SeleniumTest" />
+      </classes>
+   </test>
+
+</suite>
