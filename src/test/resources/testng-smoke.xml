@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Udemy">
+<suite name="Udemy-smoke">
    <test name="all-classes">
       <classes>
          <class name="stardolphin.com.udemy.SeleniumTest" />
