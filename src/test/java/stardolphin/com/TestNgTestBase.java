@@ -1,6 +1,7 @@
 package stardolphin.com;
 
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
@@ -44,7 +45,11 @@ public class TestNgTestBase {
 
     @BeforeMethod
     public void initWebDriver() {
-        driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
+        try {
+            driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
+        } catch (Exception e) {
+            throw new SkipException("Skipping test becaue Webdriver could not be obtained");
+        }
     }
 
     @AfterSuite(alwaysRun = true)
