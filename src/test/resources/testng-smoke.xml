@@ -1,6 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Udemy-smoke">
+   <listeners>
+      <listener class-name="stardolphin.com.ExtentReporterNG.ExtentReporterNG" />
+   </listeners>
    <test name="all-classes">
       <classes>
          <class name="stardolphin.com.udemy.SeleniumTest" />
